@@ -1,0 +1,12 @@
+name: workloads.python
+version: '3.12.4'
+author:
+  - name: Python
+    github: 'python'
+license: Composite
+packable: true
+hasWorkload: true
+description: A embeded python 3
+urls:
+  HomepageUrl: https://github.com/python/cpython
+  Repository: https://github.com/python/cpython

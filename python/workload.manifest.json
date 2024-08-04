@@ -1,0 +1,31 @@
+{
+    "version": "3.12.4",
+    "workloads": {
+        "python.workload": {
+            "platforms": [
+                "win-x64",
+                "win-arm64"
+            ],
+            "packages": [
+                "python"
+            ],
+            "description": "The Python"
+        }
+    },
+    "packages": {
+        "python": {
+            "kind": "tool",
+            "aliases": {
+                "win-x64": "https://www.python.org/ftp/python/3.12.4/python-3.12.4-embed-amd64.zip",
+                "win-arm64": "https://www.python.org/ftp/python/3.12.4/python-3.12.4-embed-arm64.zip"
+            },
+            "definition": [
+                {
+                    "execPath": "python",
+                    "overrideName": "python3",
+                    "exportSymlink": true
+                }
+            ]
+        }
+    }
+}

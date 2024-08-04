@@ -1,0 +1,36 @@
+{
+    "version": "0.30.1",
+    "workloads": {
+        "vein-compiler": {
+            "name": "vein-compiler",
+            "platforms": [
+                "win-x64",
+                "linux-x64",
+                "osx-x64",
+                "osx-arm64"
+            ],
+            "packages": [
+                "vein-compiler-package"
+            ],
+            "description": "Vein Compiler"
+        }
+    },
+    "packages": {
+        "vein-compiler-package": {
+            "name": "vein-compiler-package",
+            "kind": "tool",
+            "aliases": {
+                "win-x64": "https://github.com/vein-lang/vein/releases/download/v0.30.1/veinc.compiler-winx64.zip",
+                "linux-x64": "https://github.com/vein-lang/vein/releases/download/v0.30.1/vein.veinc.linux-x64.zip",
+                "osx-x64": "https://github.com/vein-lang/vein/releases/download/v0.30.1/vein.veinc.osx-x64.zip",
+                "osx-arm64": "https://github.com/vein-lang/vein/releases/download/v0.30.1/vein.veinc.osx-arm64.zip"
+            },
+            "definition": [
+                {
+                    "execPath": "veinc",
+                    "exportSymlink": true
+                }
+            ]
+        }
+    }
+}
